@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: auto;
+    color: #000000
+    font-weight: 500;
+    min-height: 100vw;
+}
+
+header {
+    background: #d3d3d3;
+    padding: 20px 30px;
+}
+
+main {
+    border: solid;
+    border-color: #a9a9a9;
+    border-width: thin;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+main dl dt {
+    margin-left: 20px;
+    margin-right: 20px; 
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+main dl dd {
+    margin: 0 20px 10px 20px;
+}
+
+label, input[type=text], input[type=submit] {
+    display: block;
+}
+
+input[type=text], input[type=submit], input[type=email], input[type=month], select {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 0.8em;
+} 
+
+input:valid {
+    border-color: green;
+}
+
+button {
+    font-size: 1.3em;
+    width: 90%;
+    margin: 20px;
+    padding: 10px 10px;
+    background:#1e90ff;
+    color: #ffffff; 
+    cursor: pointer;
+    padding: 15px, 25px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #000080;
+    color: #ffffff;
+}
+
+img {
+    width: 100%;
+    border: solid;
+    border-color: #dcdcdc;
+    border-width: thin;
+    border-radius: 5px;
+}
+
+fieldset label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#bordacompra {
+    border: solid;
+    border-color: #a9a9a9;
+    border-width: thin;
+    background: #d3d3d3;    
+}
+
+#newsletter {
+    display: inline;
+    font-size: 0.9em;
+    margin-left: 4px;
+}
+
+#imagem {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#dados {
+    margin: 2em 2em 0 2em;
+}
+
+#cartao {
+    margin: 2em 2em 1em 2em;
+}
+
+#botao {
+    text-align: center;
+
+}
+
+#check {
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    #responsividade {
+        display: flex;
+    }
+
+    main {
+        width: 33.33333%;
+        margin: 30px 10px;
+    }
+
+    section {
+        width: 66.66666%;
+    }
+
+    #dados {
+        margin: 2em 0.5em 0 0.5em;       
+        
+    }
+
+    #cartao {
+        margin: 2em 0.5em 1em 0.5em;           
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    #responsividade {
+        display: flex;
+    }
+
+    main {
+        width: 33.33333%;
+        margin: 30px 10px;
+    }
+
+    section {
+        width: 66.66666%;
+    }
+    
+    section form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #dados {
+        width: 47%;  
+        margin: 2em 8px;      
+    }
+
+    #cartao {
+        width: 47%;
+        margin: 2em 8px;
+    }
+
+    select {
+        height: 2.9em;
+    }
+
+    input[type=month] {
+        height: 2.9em;
+    }
+
+    button{
+        width: 100%;
+        margin: 10px;
+    }
+}
