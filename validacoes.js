@@ -33,4 +33,6 @@ function validar() {
 		formuser.nome.focus();
 		return false;
 	}
+
+	alert ("Parabéns! Você acaba de adquirir um excelente produto.");
 }
